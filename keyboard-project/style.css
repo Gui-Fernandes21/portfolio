@@ -17,6 +17,7 @@ main {
   min-height: 80vh;
   position: relative;
   height: 100%;
+  overflow-y: hidden;
 }
 
 .presentation {
@@ -60,7 +61,7 @@ main {
   width: 80vw;
   display: grid;
   place-items: center;
-  grid-template-rows: repeat(4, 4rem);
+  grid-template-rows: repeat(4, 4.2rem);
 }
 
 .keyboard-grid .first-row,
@@ -93,8 +94,41 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 55vh;
+  height: 56vh;
   background-color: #04411fce;
   display: grid;
   place-items: center;
+  opacity: 0;
+  transform: translateY(56vh);
+  transition: 500ms ease-in-out;
+  transition-delay: 50ms;
+}
+
+.keyboard-item.caps {
+  position: relative;
+  padding: 1rem 2.5rem;
+}
+
+.keyboard-item.caps .toggle-caps {
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  border: 0.5px solid #fff;
+  top: 20%;
+  right: 10%;
+  border-radius: 50%;
+}
+
+.keyboard-item.caps .toggle-caps.active {
+  background: #fff;
+}
+
+.keyboard-item[data-value="enter"] {
+  padding: 1rem 2.5rem;
+  font-size: 20px;
+}
+
+.keyboard-item[data-value="escape"] {
+  padding: 1rem 3rem;
+  font-size: 20px; 
 }

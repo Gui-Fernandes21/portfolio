@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./app.js" defer></script>
+    <script src="./keyboard.js" defer></script>
+    <script src="./behavior.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Keyboard JavaScript Project</title>
   </head>
@@ -12,12 +13,12 @@
     <div class="presentation">
       <h1>Keyboard JavaScript Project</h1>
     </div>
-
+    
     <main>
       <div class="input-field">
         <label>Type here: </label><input type="text" />
       </div>
-
+      
       <div class="keyboard-container">
         <div class="keyboard-grid">
           <div class="first-row">
@@ -31,7 +32,9 @@
             <div class="keyboard-item" data-value="8">8</div>
             <div class="keyboard-item" data-value="9">9</div>
             <div class="keyboard-item" data-value="0">0</div>
-            <div class="keyboard-item" data-value="escape">escape</div>
+            <div class="keyboard-item" data-value="escape">
+              <ion-icon name="backspace-outline"></ion-icon>
+            </div>
           </div>
           <div class="second-row">
             <div class="keyboard-item" data-value="q">q</div>
@@ -46,7 +49,10 @@
             <div class="keyboard-item" data-value="p">p</div>
           </div>
           <div class="third-row">
-            <div class="keyboard-item" data-value="caps">caps</div>
+            <div class="keyboard-item caps" data-value="caps">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <div class="toggle-caps"></div>
+            </div>
             <div class="keyboard-item" data-value="a">a</div>
             <div class="keyboard-item" data-value="s">s</div>
             <div class="keyboard-item" data-value="d">d</div>
@@ -56,7 +62,9 @@
             <div class="keyboard-item" data-value="j">j</div>
             <div class="keyboard-item" data-value="k">k</div>
             <div class="keyboard-item" data-value="l">l</div>
-            <div class="keyboard-item" data-value="enter">enter</div>
+            <div class="keyboard-item" data-value="enter">
+              <ion-icon name="enter-outline"></ion-icon>
+            </div>
           </div>
           <div class="fourth-row">
             <div class="keyboard-item" data-value="z">z</div>
@@ -70,9 +78,22 @@
             <div class="keyboard-item" data-value=".">.</div>
             <div class="keyboard-item" data-value="?">?</div>
           </div>
-          <div class="keyboard-item space" data-value="space">space</div>
+          <div class="keyboard-item space" data-value="space">
+            <ion-icon name="remove-outline"></ion-icon>
+          </div>
         </div>
       </div>
     </main>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
   </body>
-</html>
+  </html>
+  
