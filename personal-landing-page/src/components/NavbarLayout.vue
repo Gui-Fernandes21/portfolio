@@ -18,7 +18,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
+  margin: 1rem 1rem 0 1rem;
   border-bottom: 1px solid black;
   height: 20vh;
 }

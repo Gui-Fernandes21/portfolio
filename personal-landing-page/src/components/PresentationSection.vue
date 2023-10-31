@@ -3,7 +3,6 @@
 		<header>
 			<img src="/img/portfolio-pic.JPG" alt="" />
 			<h1>Designer and Front End Developer</h1>
-			<p>Hello I am Gui!</p>
 			<p>
 				I build Web Apps, Code Beautifully, Good Team Player, and Love what I
 				do!
@@ -21,8 +20,6 @@
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Osmanya&family=Sometype+Mono:ital@1&display=swap");
-
 section {
 	min-height: 80vh;
 	display: flex;
@@ -71,7 +68,7 @@ header > .accredited-logos {
 }
 
 header > .accredited-logos > img {
-	width: 10rem;
+	width: 12rem;
 }
 
 .background {
