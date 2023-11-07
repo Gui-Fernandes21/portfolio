@@ -2,7 +2,7 @@
 	<section>
 		<header>
 			<img src="/img/portfolio-pic.JPG" alt="" />
-			<h1>Designer and Front End Developer</h1>
+			<h1>Web Developer</h1>
 			<p>
 				I build Web Apps, Code Beautifully, Good Team Player, and Love what I
 				do!
